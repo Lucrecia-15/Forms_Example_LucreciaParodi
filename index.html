@@ -26,18 +26,18 @@
                 <form class="row g-4">
                     <div class="col-md-4">
                         <label for="inputCard4" class="form-label">Card #</label>
-                        <input type="card" class="form-control" id="inputCard4" placeholder="XXXXXXXXXXX">
+                        <input type="card" class="form-control" id="inputCard4" placeholder="XXXXXXXXXXX" required>
                     </div>
                     <div class="col-md-4">
                         <label for="inputCVC" class="form-label">CVC #</label>
-                        <input type="CVC" class="form-control" id="inputCVC4" placeholder="0000">
+                        <input type="cvc" class="form-control" id="inputCVC" placeholder="0000" required>
                     </div>
                     <div class="col-md-4">
                         <label for="inputAmount" class="form-label">Amount</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">$</span>
                             <input type="text" class="form-control" aria-label="Username"
-                                aria-describedby="basic-addon1" placeholder="Amount">
+                                aria-describedby="basic-addon1" placeholder="Amount" required>
                         </div>
                     </div>
                     <div>
@@ -45,19 +45,19 @@
 
                             <div class="col-md-6">
                                 <label for="formGroupExampleInput2" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                                <input type="text" class="form-control" id="formGroupExampleInput2" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="formGroupExampleInput2" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                                <input type="text" class="form-control" id="formGroupExampleInput2" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="formGroupExampleInput2" class="form-label">City</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                                <input type="text" class="form-control" id="formGroupExampleInput2" required>
                             </div>
                             <div class="col-md-3">
                                 <label for="disabledSelect" class="form-label">State</label>
-                                <select id="disabledSelect" class="form-select">
+                                <select id="disabledSelect" class="form-select" required>
                                     <option>Pick a State</option>
                                     <option>Argentina</option>
                                     <option>Andorra</option>
@@ -72,36 +72,38 @@
                             </div>
                             <div class="col-md-3 ">
                                 <label for="formGroupExampleInput2" class="form-label">Postal Code</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                                <input type="text" class="form-control" id="formGroupExampleInput2" required>
                             </div>
                             <div class="col-sm-6 mb-auto p-3 bg-secondary-subtle ">
                                 <label for="formGroupExampleInput2" class="form-label ">We Accept:</label>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
-                                        value="option1">
-                                    <label class="form-check-label" for="inlineCheckbox1"><i
-                                            class="fa-brands fa-cc-visa"></i></label>
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"><i
+                                            class="fa-regular fa-credit-card"></i></label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
-                                        value="option2">
-                                    <label class="form-check-label" for="inlineCheckbox2"><i
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i
                                             class="fa-brands fa-cc-mastercard"></i></label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
-                                        value="option3">
-                                    <label class="form-check-label" for="inlineCheckbox3"><i
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3"><i
                                             class="fa-brands fa-cc-paypal"></i></label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
-                                        value="option3">
-                                    <label class="form-check-label" for="inlineCheckbox3"><i
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3"><i
                                             class="fa-brands fa-cc-amazon-pay"></i></label>
                                 </div>
 
                             </div>
+
+
                             <div class="col-md-6">
                                 <label for="floatingTextarea2">Message</label>
                                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
